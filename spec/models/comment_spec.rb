@@ -1,5 +1,18 @@
 require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  it "comments belong to posts" do
+    assc = described_class.reflect_on_association(:posts)
+    expect(assc.macro).to eq :belongs_to
+  end
+
+  it "comments belong to user" do
+    assc = described_class.reflect_on_association(:user)
+    expect(assc.macro).to eq :belongs_to
+  end
+
+
+
+
 end

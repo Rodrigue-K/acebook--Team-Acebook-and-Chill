@@ -12,9 +12,14 @@ RSpec.describe Post, type: :model do
     expect(assc.macro).to eq :belongs_to
   end
 
+  it "posts have many comments" do
+    assc = described_class.reflect_on_association(:comments)
+    expect(assc.macro).to eq :has_many
+  end
+
   ## only having to test that it has this functionality
 
-  # it "is valid with valid attributes" do 
+  # it "is valid with valid attributes" do
   #   expect(valid_post).to be_valid
   # end
 
