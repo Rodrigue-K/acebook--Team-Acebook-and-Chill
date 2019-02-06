@@ -1,66 +1,84 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/models/user.rb": [
+      "/Users/Emanuele/Desktop/Projects/teamproject1/acebook--Team-Acebook-and-Chill/app/models/user.rb": [
         1,
         null,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/models/application_record.rb": [
         1,
         1,
-        null
-      ],
-      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/helpers/application_helper.rb": [
-        1,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/helpers/home_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/controllers/home_controller.rb": [
-        1,
         1,
         null,
         null
       ],
-      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/controllers/application_controller.rb": [
+      "/Users/Emanuele/Desktop/Projects/teamproject1/acebook--Team-Acebook-and-Chill/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/controllers/posts_controller.rb": [
+      "/Users/Emanuele/Desktop/Projects/teamproject1/acebook--Team-Acebook-and-Chill/app/helpers/application_helper.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Emanuele/Desktop/Projects/teamproject1/acebook--Team-Acebook-and-Chill/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Emanuele/Desktop/Projects/teamproject1/acebook--Team-Acebook-and-Chill/app/controllers/home_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/Emanuele/Desktop/Projects/teamproject1/acebook--Team-Acebook-and-Chill/app/controllers/application_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        31,
+        null,
+        null,
+        1,
+        9,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/Emanuele/Desktop/Projects/teamproject1/acebook--Team-Acebook-and-Chill/app/controllers/posts_controller.rb": [
         1,
         1,
         4,
         null,
         null,
         1,
-        5,
-        5,
+        4,
+        4,
         null,
         null,
         1,
-        8,
+        14,
         null,
         null,
         1,
@@ -68,6 +86,23 @@
         null,
         null,
         1,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
         1,
         1,
         1,
@@ -77,29 +112,31 @@
         1,
         null,
         1,
-        5,
+        4,
+        null,
+        null,
+        1,
+        4,
         null,
         null
       ],
-      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/models/post.rb": [
+      "/Users/Emanuele/Desktop/Projects/teamproject1/acebook--Team-Acebook-and-Chill/app/models/post.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/channels/application_cable/channel.rb": [
+      "/Users/Emanuele/Desktop/Projects/teamproject1/acebook--Team-Acebook-and-Chill/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/channels/application_cable/connection.rb": [
-        0,
-        0,
+      "/Users/Emanuele/Desktop/Projects/teamproject1/acebook--Team-Acebook-and-Chill/app/jobs/application_job.rb": [
         0,
         0
       ],
-      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/controllers/sessions_controller.rb": [
+      "/Users/Emanuele/Desktop/Projects/teamproject1/acebook--Team-Acebook-and-Chill/app/controllers/sessions_controller.rb": [
         0,
         0,
         0,
@@ -109,6 +146,8 @@
         0,
         0,
         0,
+        null,
+        null,
         0,
         0,
         0,
@@ -121,17 +160,19 @@
         0,
         0
       ],
-      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/jobs/application_job.rb": [
+      "/Users/Emanuele/Desktop/Projects/teamproject1/acebook--Team-Acebook-and-Chill/app/channels/application_cable/connection.rb": [
+        0,
+        0,
         0,
         0
       ],
-      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/mailers/application_mailer.rb": [
+      "/Users/Emanuele/Desktop/Projects/teamproject1/acebook--Team-Acebook-and-Chill/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
         0
       ]
     },
-    "timestamp": 1549039568
+    "timestamp": 1549466409
   }
 }

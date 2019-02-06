@@ -1,11 +1,21 @@
-require 'rails_helper' #is this needed here or could this go into the spec_helper file?
+require 'rails_helper'
 
-RSpec.feature "Timeline", type: :feature do
+RSpec.feature "Writing posts", type: :feature do
+
+
+  let(:email){'bea_courage@hotmail.co.uk'}
+  let(:username){'Makers'}
+  let(:password){'testingisfunlol'}
+
+
   scenario "Can submit posts and view them" do
-    visit "/posts"
+    sign_up(email, username, password)
+    click_on 'Logout'
+    log_in(email, password)
+    expect(page.current_path).to eql('/posts')
     click_link "New post"
-    fill_in "Message", with: "Hello, world!"
+    fill_in "Message", with: "What a wonderful post!"
     click_button "Submit"
-    expect(page).to have_content("Hello, world!")
+    expect(page).to have_content("What a wonderful post!")
   end
 end
