@@ -14,8 +14,11 @@ RSpec.feature "Writing comments" do
     click_on 'Logout'
     log_in(email, password)
     post_message(message)
+    click_link 'Add Comment'
+    fill_in 'Name', with: 'Bea'
     fill_in 'Comment', with: 'Great Pic!'
-    click_button 'Submit'
+    click_button 'Create Comment'
+    expect(page).to have_content('Bea')
     expect(page).to have_content('Great Pic!')
 
   end

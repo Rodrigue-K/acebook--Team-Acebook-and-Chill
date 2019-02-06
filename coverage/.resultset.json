@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/models/user.rb": [
+      "/Users/beatricecourage/Projects/acebook--Team-Acebook-and-Chill/app/models/user.rb": [
         1,
         null,
         null,
@@ -12,12 +12,12 @@
         1,
         null
       ],
-      "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/models/application_record.rb": [
+      "/Users/beatricecourage/Projects/acebook--Team-Acebook-and-Chill/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/helpers/application_helper.rb": [
+      "/Users/beatricecourage/Projects/acebook--Team-Acebook-and-Chill/app/helpers/application_helper.rb": [
         1,
         null,
         null,
@@ -30,112 +30,68 @@
         null,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/helpers/comments_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/helpers/home_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/controllers/comments_controller.rb": [
-        1,
-        null
-      ],
-      "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/controllers/application_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        10,
-        null,
-        null,
-        1,
-        0,
         null,
         null,
         null,
         null,
         null
       ],
-      "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/controllers/home_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/controllers/posts_controller.rb": [
-        1,
-        1,
-        4,
-        null,
-        null,
-        1,
-        4,
-        4,
-        null,
-        null,
-        1,
-        15,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        4,
-        null,
-        null,
-        1,
-        4,
-        null,
-        null
-      ],
-      "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/models/comment.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/models/post.rb": [
-        1,
-        1,
-        null,
+      "/Users/beatricecourage/Projects/acebook--Team-Acebook-and-Chill/app/helpers/comments_helper.rb": [
         1,
         null
       ],
-      "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/mailers/application_mailer.rb": [
+      "/Users/beatricecourage/Projects/acebook--Team-Acebook-and-Chill/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/beatricecourage/Projects/acebook--Team-Acebook-and-Chill/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/jobs/application_job.rb": [
+      "/Users/beatricecourage/Projects/acebook--Team-Acebook-and-Chill/app/models/comment.rb": [
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        0
+      ],
+      "/Users/beatricecourage/Projects/acebook--Team-Acebook-and-Chill/app/models/post.rb": [
+        0,
+        0,
+        null,
         0,
         0
       ],
-      "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/controllers/sessions_controller.rb": [
+      "/Users/beatricecourage/Projects/acebook--Team-Acebook-and-Chill/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/beatricecourage/Projects/acebook--Team-Acebook-and-Chill/app/controllers/application_controller.rb": [
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0
+      ],
+      "/Users/beatricecourage/Projects/acebook--Team-Acebook-and-Chill/app/controllers/comments_controller.rb": [
+        0,
+        0
+      ],
+      "/Users/beatricecourage/Projects/acebook--Team-Acebook-and-Chill/app/controllers/sessions_controller.rb": [
         0,
         0,
         0,
@@ -164,19 +120,63 @@
         null,
         null
       ],
-      "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/channels/application_cable/connection.rb": [
+      "/Users/beatricecourage/Projects/acebook--Team-Acebook-and-Chill/app/controllers/home_controller.rb": [
+        0,
+        0,
+        null,
+        0,
+        0
+      ],
+      "/Users/beatricecourage/Projects/acebook--Team-Acebook-and-Chill/app/controllers/posts_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
         0,
         0,
         0,
         0
       ],
-      "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/channels/application_cable/channel.rb": [
+      "/Users/beatricecourage/Projects/acebook--Team-Acebook-and-Chill/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/beatricecourage/Projects/acebook--Team-Acebook-and-Chill/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
         0
       ]
     },
-    "timestamp": 1549456556
+    "timestamp": 1549464035
   }
 }
