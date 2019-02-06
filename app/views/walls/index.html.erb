@@ -1,5 +1,11 @@
 <h1>Walls#index</h1>
 <p>Find me in app/views/walls/index.html.erb</p>
+
+
+<%= link_to new_wall_path do %>
+  post on wall
+<% end %>
+
 <% if user_signed_in? %>
 
   <%= link_to('Logout', destroy_user_session_path, method: :delete) %>

@@ -1,0 +1,7 @@
+
+<%= form_tag({controller: "walls", action: "create"}) do |form| %>
+  <%= label_tag(:post, "post to wall:") %>
+  <%= text_field_tag(:post) %>
+  <%= submit_tag("add") %>
+<% end %>
+

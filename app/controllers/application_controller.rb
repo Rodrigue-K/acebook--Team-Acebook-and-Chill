@@ -10,10 +10,10 @@ class ApplicationController < ActionController::Base
   protected 
 
   def after_sign_in_path_for(resource)
-    walls_index_path
+    walls_path
   end
 
   def after_sign_up_path_for(resource)
-    walls_index_path
+    walls_path
   end
 end
