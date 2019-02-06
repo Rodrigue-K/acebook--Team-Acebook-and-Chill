@@ -1,0 +1,27 @@
+require 'rails_helper'
+
+RSpec.feature "Writing comments" do
+
+
+    let(:email){'bea_courage@hotmail.co.uk'}
+    let(:password){'testingisfunlol'}
+    let(:message){'Hello there'}
+
+
+
+  scenario "A user can add comments to an existing post" do
+    sign_up(email, password)
+    click_on 'Logout'
+    log_in(email, password)
+    post_message(message)
+    fill_in 'Comment', with: 'Great Pic!'
+    click_button 'Submit'
+    expect(page).to have_content('Great Pic!')
+
+  end
+
+
+
+
+
+end
