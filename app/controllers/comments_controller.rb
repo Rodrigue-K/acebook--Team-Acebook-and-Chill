@@ -6,9 +6,12 @@ class CommentsController < ApplicationController
   end
 
   def create
-    p @post
     @comment = @post.comments.create!(user_id:current_user_id, content:params['content'])
+    redirect_to posts_path
   end
+
+
+
 
 
   def destroy

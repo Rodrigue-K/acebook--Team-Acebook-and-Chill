@@ -1,13 +1,13 @@
-<div class="comment">
-<% if @post.comments %>
+
+<%#
+<% if @post.comment %>
 <ul>
   <% @comment.each do |comment| %>
   <%= comment.created_at %><br />
   <%= comment.content %><br />
-  <%= comment.name %><br /><br />
+  <%= comment.user_id %><br /><br />
   <% end %>
 </ul>
 <% else %>
 No comments
-</div>
-<% end %>
+<% end %> %>
