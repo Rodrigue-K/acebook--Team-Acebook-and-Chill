@@ -4,8 +4,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    p "i got lost sorry"
-    @post = Post.create(message: post_params[:message], user_id:current_user_id)
+    @post = Post.create(message: post_params[:message], user_id:current_user_id, user_wall:current_user_name)
     redirect_to posts_url
   end
 
@@ -49,5 +48,10 @@ class PostsController < ApplicationController
 
   def current_user_id
     current_user['id']
+  end
+
+
+  def current_user_name
+    current_user['user_name']
   end
 end

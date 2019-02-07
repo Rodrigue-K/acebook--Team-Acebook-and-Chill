@@ -22,3 +22,10 @@ def post_message(message)
   fill_in "Message", with: message
   click_button "Submit"
 end
+
+
+def post_on_userwall(message)
+  click_link "post on wall"
+  fill_in "post to wall", with: message
+  click_button "add"
+end

@@ -1,6 +1,7 @@
 class WallsController < ApplicationController
   def index
-    @wall_post = Post.all
+    userwall = params['name']
+    @wall_post = Post.where(user_wall: userwall)
   end
 
   def show
@@ -9,8 +10,7 @@ class WallsController < ApplicationController
 
 
   def create
-    p "no i dint get here"
-    @wall_post = Post.create(message: params[:post], user_id:current_user_id)
+    @wall_post = Post.create(message: params[:post], user_id:current_user_id )
     redirect_to walls_url
   end
 
@@ -27,5 +27,9 @@ class WallsController < ApplicationController
 
   def current_user_id
     current_user['id']
+  end
+
+  def current_user_name
+    current_user['user_name']
   end
 end
