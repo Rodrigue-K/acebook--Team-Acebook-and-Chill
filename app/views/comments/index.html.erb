@@ -1,0 +1,4 @@
+<%= form_tag({controller: "comments", action:'create'}) do |form| %>
+  <%= text_field_tag (:content) %>
+  <%= submit_tag ("Submit") %>
+<% end %>
