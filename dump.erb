@@ -1,0 +1,13 @@
+<div class="comment">
+<% if @post.comments %>
+<ul>
+  <% @comment.each do |comment| %>
+  <%= comment.created_at %><br />
+  <%= comment.content %><br />
+  <%= comment.name %><br /><br />
+  <% end %>
+</ul>
+<% else %>
+No comments
+</div>
+<% end %>
