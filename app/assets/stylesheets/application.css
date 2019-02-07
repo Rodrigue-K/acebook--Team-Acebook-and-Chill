@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+ #wall{
+    width: 80%;   
+ }
+
+ #user_menu{
+     width:20%;
+ }
