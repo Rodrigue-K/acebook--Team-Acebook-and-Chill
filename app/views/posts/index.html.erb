@@ -3,7 +3,7 @@
   <div class='post'>
     <p><%= simple_format(post.message) %></p>
     <p><%= post.created_at%> </p>
-    <p><%= post.user.email %></p>
+    <p><a href='/walls?name=<%= post.user.user_name %> '> <%= post.user.user_name %></p>
 
     <%= link_to 'delete', post_path(post.id), method: :delete,  data: { confirm: 'Are you sure you wish to delete this post?' } %>
     <%= link_to 'edit', edit_post_path(post.id) %>
