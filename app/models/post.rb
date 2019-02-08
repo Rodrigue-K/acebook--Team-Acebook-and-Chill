@@ -2,7 +2,7 @@ class Post < ApplicationRecord
   belongs_to :user
 
   def pretty_message
-    message.gsub(/\r/, '<br>')
+    message.gsub(/\r/, "\r")
   end
 
   def editable?
