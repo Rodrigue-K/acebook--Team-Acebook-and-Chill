@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.com/Rodrigue-K/acebook--Team-Acebook-and-Chill.svg?branch=master)](https://travis-ci.com/Rodrigue-K/acebook--Team-Acebook-and-Chill)
+![coverage](https://user-images.githubusercontent.com/40179292/52489324-de4c5780-2bb9-11e9-8d21-4e053346c51e.png)
+
 
 Table of content
 --------
