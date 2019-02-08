@@ -1,10 +1,16 @@
 <ul>
-    <li> <%= link_to new_post_path do %>
+    <li> <%= link_to posts_path do %>
             Posts page
         <% end %>
     </li>
-    <li> <%= link_to wall_path do %>
+    <li> <%= link_to walls_path do %>
            my wall
         <% end %>
     </li>
+
+    <% if user_signed_in? %>
+
+      <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+
+    <% end %>
 </ul>

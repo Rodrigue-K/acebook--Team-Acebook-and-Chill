@@ -24,10 +24,7 @@ class WallsController < ApplicationController
 
   private
 
-  # def wall_post_params
-  #   params.require(:post).permit(:message)
-  # end
-
+ 
   def current_user_id
     current_user['id']
   end
