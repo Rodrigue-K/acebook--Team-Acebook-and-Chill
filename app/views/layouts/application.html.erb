@@ -12,10 +12,13 @@
   <center>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= render 'layouts/nav_bar' %>
+    <% if user_signed_in? %>
+      <%= render 'layouts/nav_bar' %>
+    <%  end %>
     <%= yield %>
     </center>
-    <%= render 'layouts/user_menu' %>
-
+    <% if user_signed_in? %>
+      <%= render 'layouts/user_menu' %>
+    <%  end %>
   </body>
 </html>
