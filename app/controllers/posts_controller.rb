@@ -10,13 +10,14 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
+    @comments = Comment.all
   end
 
   def show
     redirect_to posts_url
   end
 
-  def destroy 
+  def destroy
      post = Post.find(params[:id])
      post.destroy
      redirect_to posts_path
@@ -28,6 +29,7 @@ class PostsController < ApplicationController
   def post_params
     params.require(:post).permit(:message)
   end
+
 
   def current_user_id
     current_user['id']

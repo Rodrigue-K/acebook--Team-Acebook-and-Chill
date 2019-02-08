@@ -1,13 +1,10 @@
 
-<%#
+
 <% if @post.comment %>
-<ul>
-  <% @comment.each do |comment| %>
-  <%= comment.created_at %><br />
-  <%= comment.content %><br />
-  <%= comment.user_id %><br /><br />
-  <% end %>
-</ul>
-<% else %>
+
 No comments
-<% end %> %>
+<% end %>
+
+
+
+  <%= comment.user_id %><br /><br />

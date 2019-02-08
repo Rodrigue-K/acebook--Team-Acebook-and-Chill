@@ -2,7 +2,8 @@ class CommentsController < ApplicationController
   before_action :set_post
 
   def index
-    @comment = Comment.new
+    @comments = Comment.all
+    p @comments
   end
 
   def create
