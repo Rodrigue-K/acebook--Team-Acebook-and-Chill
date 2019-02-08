@@ -2,23 +2,21 @@
 <% @posts.reverse.each do |post| %>
   <div class='post'>
     <p><%= simple_format(post.message) %></p>
-    <p><%= post.created_at%> </p>
+    <p><%= post.created_at.asctime%> </p>
     <p><%= post.user.email %></p>
-    <br />Comments: <%= post.comments.count %>
-    <%= link_to "Add Comment", post_comments_path(post.id) %>
-    <%= link_to 'delete', post_path(post.id), method: :delete,  data: { confirm: 'Are you sure you wish to delete this post?' } %>
+
     <ul>
       <% post.comments.each do |comment| %>
-      <%= comment.created_at %><br />
+      <%= comment.name %><br />
+      <%= comment.created_at.asctime %><br />
       <%= comment.content %><br />
       <% end %>
+      <br />Comments: <%= post.comments.count %>
     </ul>
-
+    <%= link_to "Add Comment", post_comments_path(post.id) %>
+    <%= link_to 'delete', post_path(post.id), method: :delete,  data: { confirm: 'Are you sure you wish to delete this post?' } %>
   </div>
 <%end%>
-
-
-
 
 
 

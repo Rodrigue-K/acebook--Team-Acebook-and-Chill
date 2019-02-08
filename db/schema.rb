@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20190207120611) do
     t.bigint "user_id"
     t.bigint "post_id"
     t.string "content"
+    t.string "name"
   end
 
   create_table "posts", force: :cascade do |t|
