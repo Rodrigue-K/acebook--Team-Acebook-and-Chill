@@ -176,7 +176,7 @@ header h1{
 
 /*----------------------------- the walls */
 
-#wall, #post_wall, #edit_form{
+#wall, #post_wall, #edit_form, #comments_form{
   padding-top: 5vh;
   width:60vw;
   float:right;

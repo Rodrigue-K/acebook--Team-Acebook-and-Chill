@@ -1,8 +1,10 @@
-<% post = params[:format]%>
-<% p post%>
-<%= form_tag({controller: "comments", action:'create'}) do |form| %>
-  <%= hidden_field_tag :post, post  %>
-  <%= text_field_tag :name, nil, placeholder: 'Name' %>
-  <%= text_field_tag :content, nil,  placeholder: 'Comment' %>
-  <%= submit_tag ("Create Comment") %>
-<% end %>
+<div id ='comments_form'>
+  <% post = params[:format]%>
+  <% p post%>
+  <%= form_tag({controller: "comments", action:'create'}) do |form| %>
+    <%= hidden_field_tag :post, post  %>
+    <%= text_field_tag :name, nil, placeholder: 'Name' %>
+    <%= text_field_tag :content, nil,  placeholder: 'Comment' %>
+    <%= submit_tag ("Create Comment") %>
+  <% end %>
+</div>
