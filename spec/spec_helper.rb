@@ -8,6 +8,11 @@ SimpleCov.start 'rails' do
   add_filter '/db/'
   add_filter '/spec/' # for rspec
   add_filter '/test/' # for minitest
+  add_filter '/channels/application_cable/connection' 
+  add_filter '/jobs/application_job' 
+  add_filter '/mailers/application_mailer' 
+  add_filter '/controllers/sessions_controller' 
+  add_filter '/channels/application_cable/channel' 
 end
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([

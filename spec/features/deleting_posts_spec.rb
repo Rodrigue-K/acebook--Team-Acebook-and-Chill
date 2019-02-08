@@ -8,7 +8,7 @@ RSpec.feature "delete posts", type: :feature do
 
   before {
     sign_up(email, username, password)
-    post_message(message)
+    post_on_userwall(message)
   }
   context "user wants to delete a post" do
     it 'has a delete link' do

@@ -10,7 +10,7 @@ RSpec.feature 'Sign up' do
 
     scenario 'A user can sign up' do
       sign_up(email, username, password)
-      expect(page.current_path).to eql('/posts')
+      expect(page.current_path).to eql('/walls')
       expect(page).to have_content('Welcome! You have signed up successfully.')
 
     end

@@ -1,0 +1,28 @@
+<div id ='wall'>
+
+  <h1> Welcome back <%=@user[0].user_name%> ! </h1>
+
+  <%= form_tag({controller: "walls", action: "create"}) do |form| %>
+    <%= label_tag(:post, "post to wall:") %>
+    <%= text_area_tag(:post) %>
+    <%= submit_tag("add") %>
+  <% end %>
+
+ 
+
+  <% @wall_post.reverse.each do |post| %>
+    <div class='post'>
+      <p class='message'><%= post.pretty_message%></p>
+      <p>Left at:<%= post.created_at%> </p>
+
+      <p><%= link_to walls_path(:user_name => post.user.user_name) do %>
+        From: <%= post.user.user_name %>
+      <% end %>  </p>
+       
+      <% if current_user.user_name == post.user.user_name %>
+         <%= render(:partial => '/layouts/editing', :locals => {:post => post})%>
+      <% end %>
+
+    </div>
+  <% end %>
+</div>

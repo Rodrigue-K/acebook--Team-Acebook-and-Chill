@@ -4,12 +4,13 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.create(message: post_params[:message], user_id:current_user_id)
+    @post = Post.create(message: post_params[:message], user_id:current_user_id, user_wall:current_user_name)
     redirect_to posts_url
   end
 
   def index
     @posts = Post.all
+    @comments = Comment.all
   end
 
   def show
@@ -29,16 +30,15 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
     @post.update(post_params)
-    redirect_to(post_path(@post))
+    redirect_to walls_path
   end
 
 
   def destroy
      post = Post.find(params[:id])
      post.destroy
-     redirect_to posts_path
+     redirect_back(fallback_location: root_path)
   end
-
 
   private
 
@@ -46,7 +46,13 @@ class PostsController < ApplicationController
     params.require(:post).permit(:message)
   end
 
+
   def current_user_id
     current_user['id']
+  end
+
+
+  def current_user_name
+    current_user['user_name']
   end
 end

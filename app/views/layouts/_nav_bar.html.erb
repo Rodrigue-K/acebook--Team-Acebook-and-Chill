@@ -1,0 +1,16 @@
+<header>
+    <ul>
+        <li> <%= link_to posts_path do %>
+                Posts page
+            <% end %>
+        </li>
+        <li> <%= link_to walls_path do %>
+            my wall
+            <% end %>
+        </li>
+
+        <li class ='logout'>  
+        <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+        </li>
+    </ul>
+</header>
