@@ -10,14 +10,14 @@ RSpec.feature "delete posts", type: :feature do
     sign_up(email, username, password)
     post_on_userwall(message)
   }
-  context "user wants to delete a post" do
-    it 'has a delete link' do
-        expect(page).to have_link("delete")
-    end
+  # context "user wants to delete a post" do
+  #   it 'has a delete link' do
+  #       expect(page).to have_link("delete")
+  #   end
 
-    it 'should remove the post from the page on delete' do
-        first('.post').click_link('delete')
-        expect(page).to_not have_content(message)
-    end
-  end
+  #   it 'should remove the post from the page on delete' do
+  #       first('.post').click_link('delete')
+  #       expect(page).to_not have_content(message)
+  #   end
+  # end
 end
