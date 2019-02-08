@@ -2,7 +2,11 @@
     <h1> List Of Users: </h1>
     <ul>
     <% @users.each do| user | %>
-        <li><a href='/walls?name=<%= user.user_name %>'><%= user.user_name %></a></li>
+        <li>
+            <%= link_to walls_path(:user_name => user.user_name) do %>
+                 <%= user.user_name %>
+            <% end %>
+        </li>
     <% end %>
     </ul>
 </div>
