@@ -103,6 +103,11 @@ header{
   height: 10vh;
   background: #3A808C;
 }
+header h1{
+
+   text-align:center;
+   
+}
 
 /*----------------------------- the user_menu */
 
@@ -166,7 +171,7 @@ header{
 }
 
 .message{
-  font-size: 18px;
+  font-size: 28px;
 }
 
 /*----------------------------- the walls */
