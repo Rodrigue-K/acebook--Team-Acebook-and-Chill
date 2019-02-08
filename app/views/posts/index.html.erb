@@ -22,8 +22,22 @@
         <%= render(:partial => '/layouts/editing', :locals => {:post => post})%>
       <% end %>
 
-    </div>
-  <% end %>
-
+      <%= link_to "Add Comment", comments_path(post.id) %>
+      <%= link_to 'delete', post_path(post.id), method: :delete,  data: { confirm: 'Are you sure you wish to delete this post?' } %>
   
-</div>
+      <% if current_user.user_name == post.user.user_name %>
+        <%= render(:partial => '/layouts/editing', :locals => {:post => post})%>
+      <% end %>
+  
+      <ul>
+        <% post.comments.each do |comment| %>
+        <%= comment.name %><br />
+        <%= comment.created_at.asctime %><br />
+        <%= comment.content %><br />
+        <% end %>
+    <br />Comments: <%= post.comments.count %>
+      </ul>
+  
+
+    </div>
+<%end%>

@@ -21,11 +21,12 @@ ActiveRecord::Schema.define(version: 20190207120611) do
     t.bigint "user_id"
     t.bigint "post_id"
     t.string "content"
+    t.string "name"
   end
 
   create_table "posts", force: :cascade do |t|
     t.string "message"
-    t.bigint "user_id"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "user_wall"

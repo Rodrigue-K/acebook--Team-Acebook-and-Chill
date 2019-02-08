@@ -1,6 +1,7 @@
 class Post < ApplicationRecord
   belongs_to :user
 
+  has_many :comments, dependent: :destroy
   def pretty_message
     message.gsub(/\r/, "\r")
   end
@@ -12,5 +13,5 @@ class Post < ApplicationRecord
       return false
     end
   end
- 
+
 end

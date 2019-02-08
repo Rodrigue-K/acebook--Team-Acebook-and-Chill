@@ -10,6 +10,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
+    @comments = Comment.all
   end
 
   def show
@@ -44,6 +45,7 @@ class PostsController < ApplicationController
   def post_params
     params.require(:post).permit(:message)
   end
+
 
   def current_user_id
     current_user['id']
