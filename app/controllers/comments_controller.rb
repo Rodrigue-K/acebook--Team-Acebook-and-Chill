@@ -1,13 +1,17 @@
 class CommentsController < ApplicationController
-  before_action :set_post
+  # before_action :set_post
 
   def index
+    p params
     @comments = Comment.all
-    p @comments
+
+
   end
 
   def create
-    @comment = @post.comments.create!(user_id:current_user_id, content:params['content'], name:params['name'])
+    post = params['post']
+    post = Post.find(post)
+    @comment = post.comments.create!(user_id:current_user_id, content:params['content'], name:params['name'])
     redirect_to posts_path
   end
 
@@ -26,10 +30,12 @@ class CommentsController < ApplicationController
   private
 
 
-
-  def set_post
-    @post = Post.find(params[:post_id])
-  end
+  #
+  # def set_post
+  #
+  #   @post = Post.find(params[:post_id])
+  #
+  # end
 
 
   def current_user_id
