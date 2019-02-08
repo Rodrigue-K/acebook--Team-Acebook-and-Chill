@@ -12,7 +12,7 @@ RSpec.feature 'User Authenication' do
       sign_up(email, username, password)
       click_on 'Logout'
       log_in(email, password)
-      expect(page.current_path).to eql('/posts')
+      expect(page.current_path).to eql('/walls')
     end
   end
 end

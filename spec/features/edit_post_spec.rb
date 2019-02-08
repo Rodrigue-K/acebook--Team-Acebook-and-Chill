@@ -8,7 +8,7 @@ RSpec.feature "edit post", type: :feature  do
 
   before(:each) {
     sign_up(email, username, password)
-    post_message(message)
+    post_on_userwall(message) 
   }
 
   context "user wants to edit a post" do
@@ -16,10 +16,7 @@ RSpec.feature "edit post", type: :feature  do
         expect(page).to have_link("edit")
     end
 
-    # it 'user can can see the post that can be edited in the form' do
-    #     first('.post').click_link('edit')
-    #     expect(page).to_not have_content(message)
-    # end
+
   end
 
 end 

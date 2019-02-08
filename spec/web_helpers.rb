@@ -24,8 +24,7 @@ def post_message(message)
 end
 
 
-def post_on_userwall(message)
-  # click_link "post on wall"
+def post_on_userwall(message) 
   fill_in "post", with: message
   click_button "add"
 end
