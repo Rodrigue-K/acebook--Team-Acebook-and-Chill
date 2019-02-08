@@ -1,8 +1,10 @@
-<%= form_for @post do |f| %>
+<div id ='edit_form'>
+    <%= form_for @post do |f| %>
 
-<%= f.label :message %>
+    <%= f.label :message %>
 
-<%= f.text_field :message %>
+    <%= f.text_field :message %>
 
-<%=f.submit%>
-<% end %>
+    <%=f.submit%>
+    <% end %>
+</div>
