@@ -72,6 +72,10 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 32px;
+}
+
 /*----------------------------- the nav_bar */
 
 header ul li {
@@ -110,8 +114,6 @@ header{
 }
 
 #user_menu ul {
-
-  color: white;
   margin-top: 20vh;
   height: 70vh;
   overflow:scroll;
@@ -121,6 +123,9 @@ header{
  text-align:center;
  width: 90%;
  margin:5%;
+}
+#user_menu ul li a {
+  color: white;
 }
 
 #user_menu ul li:hover{
@@ -133,4 +138,39 @@ header{
   display:inline-block;
   width: 60vw;
   float:right;
+}
+
+/*----------------------------- the entry_forms wrapper */
+
+#entry_forms {
+  margin-top: 20vh;
+  border-radius: 10px;
+}
+
+#entry_forms form input {
+  height: 20px;
+  margin: 10px;
+} 
+
+#entry_forms form label{
+  margin: 10 10 0 10;
+}
+
+
+/*----------------------------- the posts */
+
+.post {
+  width: 40%;
+  height:auto;
+  padding: 20px 10px;
+}
+
+/*----------------------------- the walls */
+
+#wall{
+  padding-top: 5vh;
+}
+
+#wall h1{
+  padding-bottom: 5vh;
 }
