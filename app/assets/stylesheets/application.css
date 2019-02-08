@@ -132,19 +132,15 @@ header{
   background: #3A808C;
 }
 
-/*----------------------------- the main wrapper */
-
-#wrapper {
-  display:inline-block;
-  width: 60vw;
-  float:right;
-}
 
 /*----------------------------- the entry_forms wrapper */
 
 #entry_forms {
-  margin-top: 20vh;
+  margin: 0px auto;
   border-radius: 10px;
+
+  padding-top: 20vh;
+  text-align:center;
 }
 
 #entry_forms form input {
@@ -160,15 +156,27 @@ header{
 /*----------------------------- the posts */
 
 .post {
-  width: 40%;
+  width: 50%;
   height:auto;
   padding: 20px 10px;
 }
 
+.post p {
+  margin: 10px 0px;
+}
+
+.message{
+  font-size: 18px;
+}
+
 /*----------------------------- the walls */
 
-#wall{
+#wall, #post_wall{
   padding-top: 5vh;
+  width:60vw;
+  float:right;
+  overflow:scroll;
+  height:90vh;
 }
 
 #wall h1{

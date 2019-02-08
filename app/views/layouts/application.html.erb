@@ -14,16 +14,10 @@
 
     <% if user_signed_in? %>
       <%= render 'layouts/nav_bar' %>
-    <% end %>
-
-
-    <div id='wrapper'>
-     <%= yield %>
-    </div>
-    
-
-    <% if user_signed_in? %>
+      <%= yield %>
       <%= render 'layouts/user_menu' %>
-    <%  end %>
+    <% else %>
+      <%= yield %>
+    <% end %>
   </body>
 </html>
