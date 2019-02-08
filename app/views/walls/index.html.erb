@@ -7,9 +7,9 @@
     <div class='post'>
       <p><%= simple_format(post.message) %></p>
       <p><%= post.created_at%> </p>
-      <p><a href='/walls?name=<%= post.user.user_name %> '> <%= post.user.user_name %></p>
+      <p><a href='/walls?name=<%= post.user.user_name %> '> <%= post.user.user_name %></a></p>
       <% if current_user.user_name == post.user.user_name %>
-       <%= render(:partial => '/layouts/editing', :locals => {:postId => post.id})%>
+       <%= render(:partial => '/layouts/editing', :locals => {:post => post})%>
        <% end %>
     </div>
   <% end %>
@@ -23,5 +23,3 @@
 
 
 </div>
-
-

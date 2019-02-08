@@ -2,14 +2,7 @@ class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :authenticate_user!
   before_action :users
-  # before_action :find_my_post
-  # before_action :logged_in
   protect_from_forgery with: :exception
-
-  # def find_my_post
-  #   @post = Post.all
-  # end
-
 
   def users
     @users = User.all
@@ -20,13 +13,6 @@ class ApplicationController < ActionController::Base
   end
 
   protected 
-
-  # def logged_in
-  #   if current_user
-  #     walls_path
-  #   end
-  # end
-  
 
   def after_sign_in_path_for(resource)
     walls_path
