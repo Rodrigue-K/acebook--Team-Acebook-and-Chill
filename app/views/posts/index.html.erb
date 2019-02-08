@@ -1,43 +1,42 @@
 <div id ='post_wall'>
-  <h1> Posts </h1>
+        <h1> Posts </h1>
 
-  <h2> add new post </h2>
+        <h2> add new post </h2>
 
-  <%= link_to new_post_path do %>
-    New post
-  <% end %>
- 
-
-  <% @posts.reverse.each do |post| %>
-    <div class='post'>
-      <p class='message'><%= post.pretty_message %></p>
-      <p>Left at: <%= post.created_at%> </p>
-
-      <p><%= link_to walls_path(:user_name => post.user.user_name) do %>
-        From: <%= post.user.user_name %>
-      <% end %>  </p>
-
-    
-      <% if current_user.user_name == post.user.user_name %>
-        <%= render(:partial => '/layouts/editing', :locals => {:post => post})%>
-      <% end %>
-
-      <%= link_to "Add Comment", comments_path(post.id) %>
-      <%= link_to 'delete', post_path(post.id), method: :delete,  data: { confirm: 'Are you sure you wish to delete this post?' } %>
-  
-      <% if current_user.user_name == post.user.user_name %>
-        <%= render(:partial => '/layouts/editing', :locals => {:post => post})%>
-      <% end %>
-  
-      <ul>
-        <% post.comments.each do |comment| %>
-        <%= comment.name %><br />
-        <%= comment.created_at.asctime %><br />
-        <%= comment.content %><br />
+        <%= link_to new_post_path do %>
+          New post
         <% end %>
-    <br />Comments: <%= post.comments.count %>
-      </ul>
-  
+      
 
+    <% @posts.reverse.each do |post| %>
+      <div class='post'>
+        <p class='message'><%= post.pretty_message %></p>
+        <p>Left at: <%= post.created_at%> </p>
+
+        <p><%= link_to walls_path(:user_name => post.user.user_name) do %>
+          From: <%= post.user.user_name %>
+        <% end %>  </p>
+
+      
+        <% if current_user.user_name == post.user.user_name %>
+          <%= render(:partial => '/layouts/editing', :locals => {:post => post})%>
+        <% end %>
+
+        <%= link_to "Add Comment", comments_path(post.id) %>
+        <%= link_to 'delete', post_path(post.id), method: :delete,  data: { confirm: 'Are you sure you wish to delete this post?' } %>
+    
+        <% if current_user.user_name == post.user.user_name %>
+          <%= render(:partial => '/layouts/editing', :locals => {:post => post})%>
+        <% end %>
+    
+        <ul>
+          <% post.comments.each do |comment| %>
+          <%= comment.name %><br />
+          <%= comment.created_at.asctime %><br />
+          <%= comment.content %><br />
+          <% end %>
+          <li>Comments: <%= post.comments.count %> </li>
+        </ul>
     </div>
-<%end%>
+    <%end%>
+  </div>
