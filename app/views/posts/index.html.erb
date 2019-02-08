@@ -5,10 +5,12 @@
     <p><%= post.created_at%> </p>
     <p> <%= link_to walls_path(:user_name => post.user.user_name) do %>
        <%= post.user.user_name %>
+       <% if current_user.user_name == post.user.user_name %>
+       <%= render(:partial => '/layouts/editing', :locals => {:postId => post.id})%>
+       <% end %>
     <% end %>
+   
 
-    <%= link_to 'delete', post_path(post.id), method: :delete,  data: { confirm: 'Are you sure you wish to delete this post?' } %>
-    <%= link_to 'edit', edit_post_path(post.id) %>
 
 
   </div>
