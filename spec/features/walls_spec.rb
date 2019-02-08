@@ -47,7 +47,7 @@ RSpec.feature 'Walls' do
         before {
             click_link 'Logout'
             sign_up(email2, username2, password2)
-            visit("/walls?name='Makers'")
+            click_link 'Makers'
             post_on_userwall(message2) 
         }
         it 'other users should be able to post on our page' do 
