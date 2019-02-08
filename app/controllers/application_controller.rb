@@ -14,14 +14,14 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up, keys: [:user_name])
   end
 
-  protected 
+  protected
 
   def logged_in
     if current_user
       walls_path
     end
   end
-  
+
 
   def after_sign_in_path_for(resource)
     walls_path
