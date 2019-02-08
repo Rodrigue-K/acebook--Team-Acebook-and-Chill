@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Writing posts", type: :feature do
+RSpec.feature "Writing posts on someone elses wall", type: :feature do
 
 
   let(:email){'bea_courage@hotmail.co.uk'}
@@ -10,10 +10,7 @@ RSpec.feature "Writing posts", type: :feature do
 
   scenario "Can submit posts and view them" do
     sign_up(email, username, password)
-    click_on 'Logout'
-    log_in(email, password)
-    expect(page.current_path).to eql('/posts')
-    click_link "New post"
+    click_link "post on wall"
     fill_in "Message", with: "What a wonderful post!"
     click_button "Submit"
     expect(page).to have_content("What a wonderful post!")

@@ -4,13 +4,15 @@
       "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/models/user.rb": [
         1,
         null,
+        1,
+        1,
         null,
         null,
         1,
-        null,
-        null,
+<<<<<<< HEAD
         1,
-        1,
+=======
+>>>>>>> user_walls
         null,
         null
       ],
@@ -46,6 +48,7 @@
         1,
         null
       ],
+<<<<<<< HEAD
       "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/controllers/comments_controller.rb": [
         1,
         1,
@@ -81,29 +84,40 @@
         null,
         null,
         null,
+=======
+      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/helpers/walls_helper.rb": [
+>>>>>>> user_walls
         1,
-        1,
-        null,
-        null,
         null
       ],
+<<<<<<< HEAD
       "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/controllers/application_controller.rb": [
         1,
+=======
+      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/models/post.rb": [
+>>>>>>> user_walls
         1,
         1,
         null,
         1,
+<<<<<<< HEAD
         10,
+=======
+        1,
+>>>>>>> user_walls
         null,
         null,
         1,
-        0,
+        2,
+        1,
         null,
+        1,
         null,
         null,
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/controllers/home_controller.rb": [
         1,
         1,
@@ -120,26 +134,50 @@
         1,
         4,
         4,
+=======
+      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/controllers/application_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+>>>>>>> user_walls
         null,
+        0,
         null,
+<<<<<<< HEAD
         1,
         16,
         16,
+=======
+>>>>>>> user_walls
         null,
+        0,
+        0,
+        0,
         null,
-        1,
+        0,
+        0,
+        0,
+        null,
         0,
         null,
         null,
-        1,
-        1,
-        1,
-        1,
         null,
         null,
         null,
-        1,
-        null,
+<<<<<<< HEAD
         1,
         4,
         null,
@@ -167,17 +205,54 @@
         null
       ],
       "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/mailers/application_mailer.rb": [
+=======
+        null,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+>>>>>>> user_walls
         0,
         0,
         0,
         0
       ],
+<<<<<<< HEAD
       "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/jobs/application_job.rb": [
         0,
         0
       ],
       "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/controllers/sessions_controller.rb": [
+=======
+      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/controllers/home_controller.rb": [
         0,
+        0,
+        null,
+        0,
+        0
+      ],
+      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/controllers/posts_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+>>>>>>> user_walls
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
         0,
         0,
         null,
@@ -188,6 +263,60 @@
         0,
         0,
         null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/controllers/sessions_controller.rb": [
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0
+      ],
+      "/Users/Huxley/Desktop/makers_ruby/week8/acebook--Team-Acebook-and-Chill/app/controllers/walls_controller.rb": [
+        0,
         null,
         0,
         0,
@@ -198,12 +327,30 @@
         0,
         0,
         0,
+        null,
+        null,
         0,
         0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
         null,
         null,
+        0,
         null,
-        null
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0
       ],
       "/Users/beatricecourage/Projects/Enginnering_Project_2weeks/acebook--Team-Acebook-and-Chill/app/channels/application_cable/connection.rb": [
         0,
@@ -218,6 +365,10 @@
         0
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1549634548
+=======
+    "timestamp": 1549624692
+>>>>>>> user_walls
   }
 }

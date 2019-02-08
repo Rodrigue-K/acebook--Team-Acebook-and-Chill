@@ -1,9 +1,20 @@
 <h2> Posts </h2>
+
 <% @posts.reverse.each do |post| %>
   <div class='post'>
     <p><%= simple_format(post.message) %></p>
     <p><%= post.created_at.asctime%> </p>
-    <p><%= post.user.email %></p>
+
+    <p><%= link_to walls_path(:user_name => post.user.user_name) do %>
+      <%= post.user.user_name %>
+    <% end %>  </p>
+
+    <%= link_to "Add Comment", post_comments_path(post.id) %>
+    <%= link_to 'delete', post_path(post.id), method: :delete,  data: { confirm: 'Are you sure you wish to delete this post?' } %>
+
+    <% if current_user.user_name == post.user.user_name %>
+      <%= render(:partial => '/layouts/editing', :locals => {:post => post})%>
+    <% end %>
 
     <ul>
       <% post.comments.each do |comment| %>
@@ -13,8 +24,8 @@
       <% end %>
   <br />Comments: <%= post.comments.count %>
     </ul>
-    <%= link_to "Add Comment", post_comments_path(post.id) %>
-    <%= link_to 'delete', post_path(post.id), method: :delete,  data: { confirm: 'Are you sure you wish to delete this post?' } %>
+
+
   </div>
 <%end%>
 
@@ -24,10 +35,4 @@
 
 <%= link_to new_post_path do %>
   New post
-<% end %>
-
-<% if user_signed_in? %>
-
-  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-
 <% end %>
