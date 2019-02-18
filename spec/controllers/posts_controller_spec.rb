@@ -16,13 +16,6 @@ RSpec.describe PostsController, type: :controller do
     end
   end
 
-  #   it "creates a post" do
-  #     p Post
-  #     Post.create(message: "Hello, world!", user_id: 1 )
-  #     p Post.all
-  #     expect(Post.find_by(message: "Hello, world!")).to be(true)
-  #   end
-  # end
 
   describe "GET /" do
     it "responds with 200" do
